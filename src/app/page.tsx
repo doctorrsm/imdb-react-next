@@ -7,7 +7,7 @@ export default async function Home({ searchParams }) {
   let fetchUrl = null;
   if (genre === "fetchTrending") {
     fetchUrl =
-      "https://kinopoiskapiunofficial.tech/api/v2.2/films?countries=1&order=RATING&type=ALL&ratingFrom=0&ratingTo=10&yearFrom=2020&yearTo=2023&page=1";
+    "https://kinopoiskapiunofficial.tech/api/v2.2/films/top?type=TOP_100_POPULAR_FILMS&page=1";
   }
 
   if (genre === "fetchTopRated") {
@@ -32,7 +32,7 @@ export default async function Home({ searchParams }) {
     throw new Error("Failed to fetch data");
   }
   const data = await res.json();
-  let movies = data.items;
+  let movies = data.films;
   if (genre === "fetchTopRated") {
     movies = data.films;
   }
