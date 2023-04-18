@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 const API_KEY = process.env.API_KEY;
 
 import Results from "@/components/Results";
