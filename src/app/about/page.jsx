@@ -38,7 +38,7 @@ const About = () => {
 
       <p>
         Join the IBDM Clone community today and start exploring the world of
-        data modeling. Whether you're an experienced data professional or just
+        data modeling. Whether you&apos;re an experienced data professional or just
         starting out, we have something for everyone. From beginner-friendly
         tutorials to advanced data modeling techniques, IBDM Clone is the
         ultimate resource for all your data modeling needs.
