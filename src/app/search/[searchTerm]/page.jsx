@@ -1,4 +1,4 @@
-import Results from "@/components/Results";
+import Results from "../../../components/Results";
 const API_KEY = process.env.API_KEY;
 
 export default async function SearchPage({params}) {
@@ -22,7 +22,7 @@ export default async function SearchPage({params}) {
      const data = await res.json();
 
      const results = data;
-     
+
   return (
     <div>
       {results && results.length === 0 && (
